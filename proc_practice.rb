@@ -5,6 +5,15 @@ We say Proc objects are 'callable' because they have a method 'call' which
 will execute the code defined in the block
 =end
 
+def mult(mult_by)
+	return Proc.new{|n| n *mult_by}
+end
+
+times2= mult(2)
+puts times2.call(50)
+
+
+
 #**TODO ENTER CODE**
 # * define and call a procedure in two different ways, using new, and as a method.
 #   the procedure should output a string to the console

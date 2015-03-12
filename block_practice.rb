@@ -3,11 +3,7 @@
 
 #**TODO ENTER CODE**
 # * Output all the methods of the Enumerable class to the console
-
-
-
-
-
+puts Enumerable.methods
 
 # **TODO ENTER CODE **
 # * create a class called Persons that hand rolls an 'each' iterator method, inside of which you
@@ -15,18 +11,29 @@
 #   This means that the class you create...say Person... will respond to Person.each.
 # * use a normal each loop to iterate over the class and output the names to the console.
 
+class Persons
+	attr_accessor :names
+	
+	def each names
+		@names=names
+		@names.each do |n|
+			puts n
+		end
+	end
 
+	def find (string_to_find)
+		self.include?()
+	end
 
+end
 
-
-
-
+person = Persons.new.each(['Wendy', 'Nick', 'Kona', 'Annie'])
 
 # **TODO ENTER CODE**
 # * Find a name starting with 'a', you will need to include the Enumerable module into Persons, make sure you have a name
 #   starting with 'a'
 
-
+# Person.new
 
 
 
