@@ -1,25 +1,18 @@
 #MAP
 
-##Explain in words
-# TODO What is going on in the following code block?
 
-=begin
-
-=end
+#**TODO ENTER CODE**
+# * use map to upcase the names of an array
 
 
-class Person
-  attr_accessor :age
-  def initialize(options)
-    self.age = options[:age]
-  end
-  def teenager?
-    (13..19) === age
-  end
-end
 
-people = 10.step(25,3).map { |i| Person.new(:age => i) }
+#**TODO ENTER CODE**
+# * use map to square(multiply the number by itself) an sequence of numbers
 
+
+
+#**TODO ENTER CODE**
+# * use map to add 1 to each number in a sequence of numbers
 
 
 
@@ -29,3 +22,26 @@ people = 10.step(25,3).map { |i| Person.new(:age => i) }
 =end
 array = [1,2,3,4,5]
 result = array.map {|n| puts n * 100 }
+
+
+##Explain in words
+# TODO What is going on in the following code block?
+
+=begin
+
+=end
+
+
+class Cat
+  attr_accessor :years
+  def initialize(years)
+    self.age = years
+  end
+
+end
+
+cats = 10.step(25,3).map { |i| Cat.new( i) }
+
+
+
+
