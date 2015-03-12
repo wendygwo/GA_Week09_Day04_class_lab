@@ -19,7 +19,7 @@ class CalendarEntry
   
   def initialize(name)
     # store name
-    # set state to undone
+    # set past to false
   end
 end
 
