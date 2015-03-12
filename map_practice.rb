@@ -35,13 +35,11 @@ result = array.map {|n| puts n * 100 }
 class Cat
   attr_accessor :years
   def initialize(years)
-    self.age = years
+    self.years = years
   end
 
 end
 
 cats = 10.step(25,3).map { |i| Cat.new( i) }
-
-
 
 
